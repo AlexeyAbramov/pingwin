@@ -1,4 +1,60 @@
 $(document).ready(function () {
+  setInterval(() => {
+    $(".phone-header__mark").each(function (index) {
+      switch (index) {
+        case 0:
+          $(this).animate(
+            {
+              // opacity: "0",
+              right: `${getRandomArbitrary(35, 53)}%`,
+              top: `${getRandomArbitrary(4, 26)}%`,
+            },
+            0,
+            "linear"
+          );
+          break;
+        case 1:
+          $(this).animate(
+            {
+              // opacity: "0",
+              right: `${getRandomArbitrary(28, 57)}%`,
+              top: `${getRandomArbitrary(46, 56)}%`,
+            },
+            0,
+            "linear"
+          );
+          break;
+        case 2:
+          $(this).animate(
+            {
+              // opacity: "0",
+              right: `${getRandomArbitrary(1, 26)}%`,
+              top: `${getRandomArbitrary(3, 56)}%`,
+            },
+            0,
+            "linear"
+          );
+          break;
+        case 3:
+          $(this).animate(
+            {
+              // opacity: "0",
+              right: `${getRandomArbitrary(1, 36)}%`,
+              top: `${getRandomArbitrary(1, 34)}%`,
+            },
+            0,
+            "linear"
+          );
+        default:
+          break;
+      }
+    });
+  }, 3000);
+
+  function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
   //scroll
   $header__top = $(".header__top");
 
