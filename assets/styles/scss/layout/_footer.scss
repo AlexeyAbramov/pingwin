@@ -75,11 +75,11 @@
       }
     }
     &__arrow {
-      width: 14px;
-      height: 7px;
-      margin: 0 0 1px 9px;
+      width: 15px;
+      height: 9px;
+      margin: 0 0 5px 4px;
       transform: rotate(180deg);
-      background: url("../../images/header/arrow.png") no-repeat center center /
+      background: url("../../images/header/arrow.svg") no-repeat center center /
         cover;
     }
     .footer-language {
