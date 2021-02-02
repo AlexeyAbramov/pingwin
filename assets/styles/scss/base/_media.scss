@@ -1,4 +1,9 @@
 @media screen and (max-width: 1650px) {
+  .features {
+    &::after {
+      display: none;
+    }
+  }
   .how {
     &::after {
       display: none;
@@ -11,16 +16,12 @@
       margin-top: 10%;
     }
   }
-  .features {
-    &::after {
-      display: none;
-    }
-  }
-  .footer{
-    &__left{
+
+  .footer {
+    &__left {
       max-width: 73%;
     }
-    &__wrapper{
+    &__wrapper {
       max-width: 400px;
     }
   }
@@ -119,8 +120,8 @@
     &__phone {
       margin-top: 27px;
     }
-    .phone-header{
-      &__img{
+    .phone-header {
+      &__img {
         margin: 0 auto;
       }
     }
@@ -327,14 +328,14 @@
     }
   }
 }
-@media screen and (max-width: 320px){
-  .header{
-    .phone-header{
+@media screen and (max-width: 320px) {
+  .header {
+    .phone-header {
       padding: 0 15px;
     }
   }
-  .partners{
-    &__item{
+  .partners {
+    &__item {
       max-width: calc(100% - 40px);
     }
   }
