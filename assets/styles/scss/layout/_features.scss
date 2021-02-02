@@ -1,0 +1,46 @@
+.features {
+  background-color: $grey;
+  position: relative;
+  &__inner {
+    padding: 95px 0 130px 0;
+  }
+  &__heading {
+    max-width: 604px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 43px;
+  }
+  &__body {
+    margin-top: 90px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 255px));
+    justify-content: center;
+    row-gap: 72px;
+    column-gap: 30px;
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__text {
+    margin-left: 27px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  &::after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 353px;
+    height: 344px;
+    background: url('../../images/features/lines.png') no-repeat center center;
+    right: 0;
+    bottom: -172px;
+    z-index: 99;
+  }
+}

@@ -1,0 +1,143 @@
+.how {
+  background: url("../../images/how/pattern.png") no-repeat center center /
+    cover;
+  position: relative;
+  &__inner {
+    padding: 60px 0 100px 0;
+  }
+  &__heading {
+    text-align: center;
+  }
+  &__title {
+    color: $white;
+  }
+  .registration-how {
+    margin-top: 70px;
+    background: url("../../images/how/bg.png") no-repeat 50% 7%;
+    &__heading {
+      text-align: center;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__title {
+      color: $white;
+    }
+  }
+  .body-how {
+    display: flex;
+    flex-direction: column;
+    max-width: 964px;
+    margin: 0 auto;
+    .top-how {
+      display: flex;
+      justify-content: space-between;
+      &__buy,
+      &__sell {
+        width: 296px;
+        min-height: 628px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      &__phone {
+        margin-top: 40px;
+      }
+      &__list {
+        margin-top: 20px;
+      }
+      &__item {
+        padding: 15px;
+        background-color: $white;
+        box-shadow: 0px 12px 24px rgba(96, 90, 196, 0.15);
+        border-radius: 12px;
+        transition: 0.3s padding 0s;
+        & + .top-how__item {
+          margin-top: 18px;
+        }
+        &:hover {
+          filter: drop-shadow(0px 8px 16px rgba(72, 66, 163, 0.35));
+          cursor: url("../../images/cursor.png"), auto;
+        }
+      }
+      &__title {
+        color: $white;
+        text-align: center;
+      }
+      &__text {
+        margin-top: 5px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+      &__image {
+        margin: 0 auto;
+      }
+    }
+    .bottom-how {
+      max-width: 296px;
+      margin: 0 auto;
+      &__wrapper{
+        text-align: center;
+      }
+      &__item {
+        padding: 15px;
+        background-color: $white;
+        box-shadow: 0px 12px 24px rgba(96, 90, 196, 0.15);
+        border-radius: 12px;
+        transition: 0.3s padding 0s;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:last-child{
+          margin-top: 30px;
+        }
+        & + .top-how__item {
+          margin-top: 18px;
+        }
+        &:hover {
+          filter: drop-shadow(0px 8px 16px rgba(72, 66, 163, 0.35));
+          cursor: url("../../images/cursor.png"), auto;
+        }
+      }
+      &__title {
+        color: $white;
+        text-align: center;
+      }
+      &__text {
+        margin-top: 5px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+      &__image {
+        margin: 0 auto;
+      }
+      .social-how {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background: rgba(55, 71, 79, 0.1);
+        border-radius: 9px;
+        padding: 16px;
+      }
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title {
+      color: $white;
+    }
+  }
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    left: -18px;
+    bottom: -372px;
+    width: 487px;
+    height: 492px;
+    background: url("../../images/how/dots.png");
+  }
+}

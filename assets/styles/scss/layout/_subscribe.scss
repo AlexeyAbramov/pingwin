@@ -1,0 +1,107 @@
+.subscribe {
+  padding: 83px 0 155px 0;
+
+  &__title {
+    text-align: center;
+  }
+  &-notification {
+    background-color: $purple;
+    max-width: 572px;
+    padding: 22px 40px 22px 21px;
+    margin: 43px auto 0 auto;
+    box-shadow: 0px 12px 24px rgba(96, 90, 196, 0.15);
+    border-radius: 12px;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__text {
+      margin-left: 12px;
+    }
+  }
+  &__body {
+    margin-top: 48px;
+  }
+  &__text {
+    text-align: center;
+  }
+  &__list {
+    margin-top: 68px !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(258px, 350px));
+    justify-content: center;
+    grid-gap: 30px;
+    
+  }
+  &__item {
+    box-shadow: 0px 12px 24px rgba(96, 90, 196, 0.15);
+    border-radius: 12px;
+    padding: 34px 49px 47px 49px;
+    &:nth-child(1) {
+      background-color: $white;
+    }
+    &:nth-child(2) {
+      background: linear-gradient(
+          0deg,
+          #ffb341 1.7%,
+          #fdc643 49.16%,
+          #fbd745 91.87%
+        ),
+        #fbd745;
+    }
+    &:nth-child(3) {
+      background: linear-gradient(0deg, #7f78f0 0%, #6059cf 75.85%), #7e77f1;
+    }
+  }
+  &-item {
+    &__title {
+      text-align: center;
+    }
+    &__list {
+      margin-top: 60px !important;
+      min-height: 108px;
+    }
+    &__point {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        top: 8px;
+        left: -20px;
+        background-color: $purple;
+      }
+    }
+    &:nth-child(3) .subscribe-item__point {
+      &::before {
+        background-color: $orange;
+      }
+    }
+    &__link {
+      border-radius: 50px;
+      padding: 9px 0;
+      width: 100%;
+      display: block;
+    }
+    #subscribe__link1 {
+      color: $purple !important;
+      border: 2px solid $purple;
+    }
+    #subscribe__link2 {
+      color: $black !important;
+      border: 2px solid $black;
+    }
+    #subscribe__link3 {
+      color: $white !important;
+      border: 2px solid $white;
+    }
+    &__more {
+      text-align: center;
+      box-sizing: border-box;
+      filter: drop-shadow(0px 12px 24px rgba(96, 90, 196, 0.15));
+      margin-top: 32px;
+    }
+  }
+}

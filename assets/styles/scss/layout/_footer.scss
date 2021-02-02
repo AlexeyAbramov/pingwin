@@ -1,0 +1,117 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  background: linear-gradient(
+      180deg,
+      #ffb341 -41.15%,
+      #fdc643 16.04%,
+      #fbd745 67.51%
+    ),
+    #fbd745;
+  border-top-left-radius: 50% 37px;
+  border-top-right-radius: 50% 37px;
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 158px;
+  }
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 683px;
+    width: 100%;
+  }
+  &__wrapper {
+    max-width: 452px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: $black;
+      text-decoration: underline;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: bold;
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item:last-child{
+    margin-left: 14px;
+  }
+  &__link {
+    display: block;
+  }
+  &-language {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: bold;
+    position: relative;
+    margin-left: 14px;
+    &__popup {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 81px;
+      height: 44px;
+      border: 2px solid $black;
+      filter: drop-shadow(0px 12px 24px rgba(96, 90, 196, 0.15));
+      border-radius: 50px;
+      cursor: pointer;
+      &.active {
+        .footer-language__arrow {
+          transform: rotate(0deg);
+        }
+      }
+    }
+    &__arrow {
+      width: 14px;
+      height: 7px;
+      margin: 0 0 1px 9px;
+      transform: rotate(180deg);
+      background: url("../../images/header/arrow.png") no-repeat center center /
+        cover;
+    }
+    .footer-language {
+      &.active {
+        display: block;
+      }
+      display: none;
+      position: absolute;
+      top: -160px;
+      width: 160px;
+      height: 141px;
+      background-color: $white;
+      box-shadow: 0px 12px 24px rgba(96, 90, 196, 0.15);
+      border-radius: 9px;
+      z-index: 999;
+      &__list {
+        text-align: end;
+        overflow: hidden;
+        padding: 14px 0;
+      }
+      &__link {
+        display: block;
+        cursor: url("../../images/cursor.png"), auto;
+        color: $black;
+      }
+      &__item {
+        padding: 6px 32px 6px 0;
+        font-weight: normal;
+        &:hover {
+          background-color: $white--hover;
+        }
+      }
+    }
+  }
+}
