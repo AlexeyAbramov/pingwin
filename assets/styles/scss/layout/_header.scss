@@ -1,7 +1,7 @@
 .header {
   height: 650px;
-  border-bottom-left-radius: 50% 90px;
-  border-bottom-right-radius: 50% 90px;
+  border-bottom-left-radius: 50% 18%;
+  border-bottom-right-radius: 50% 18%;
   overflow: hidden;
   &__inner {
     height: inherit;
@@ -155,23 +155,34 @@
       &:nth-child(1) {
         top: 106px;
         right: 168px;
-        z-index: 0;
+        z-index: 1;
 
       }
       &:nth-child(2) {
         top: 240px;
         right: 88px;
-        z-index: 0;
+        z-index: 1;
       }
       &:nth-child(3) {
         top: 77px;
         right: 13px;
-        z-index: 1;
+        z-index: 2;
       }
       &:nth-child(4) {
         right: 0;
         top: 233px;
-        z-index: 1;
+        z-index: 2;
+      }
+    }
+    .phone__wrapper{
+      position: relative;
+      &::after{
+        position: absolute;
+        content:'';
+        width: 100%;
+        height: 200px;
+        bottom: 0;
+        background: linear-gradient(0deg, $orange--gradient -10.87%, rgba(254, 218, 70, 0) 61.88%);
       }
     }
   }

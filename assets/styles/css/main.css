@@ -189,8 +189,8 @@ a {
 
 .header {
   height: 650px;
-  border-bottom-left-radius: 50% 90px;
-  border-bottom-right-radius: 50% 90px;
+  border-bottom-left-radius: 50% 18%;
+  border-bottom-right-radius: 50% 18%;
   overflow: hidden;
 }
 .header__inner {
@@ -341,22 +341,33 @@ a {
 .header .phone-header__mark:nth-child(1) {
   top: 106px;
   right: 168px;
-  z-index: 0;
+  z-index: 1;
 }
 .header .phone-header__mark:nth-child(2) {
   top: 240px;
   right: 88px;
-  z-index: 0;
+  z-index: 1;
 }
 .header .phone-header__mark:nth-child(3) {
   top: 77px;
   right: 13px;
-  z-index: 1;
+  z-index: 2;
 }
 .header .phone-header__mark:nth-child(4) {
   right: 0;
   top: 233px;
-  z-index: 1;
+  z-index: 2;
+}
+.header .phone-header .phone__wrapper {
+  position: relative;
+}
+.header .phone-header .phone__wrapper::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+  background: linear-gradient(0deg, #FFB341 -10.87%, rgba(254, 218, 70, 0) 61.88%);
 }
 
 .features {
@@ -902,6 +913,11 @@ a {
     max-width: 400px;
   }
 }
+@media screen and (min-width: 860px) {
+  .footer__body {
+    height: 158px;
+  }
+}
 @media screen and (max-width: 860px) {
   .header {
     border-radius: 0%;
@@ -997,6 +1013,9 @@ a {
   }
   .header .phone-header__mark {
     width: 20%;
+  }
+  .header .phone-header .phone__wrapper::after {
+    height: 100%;
   }
   .header .appstore__image {
     background: url("../../images/header/appstore-mobile.png") no-repeat center center/cover;
