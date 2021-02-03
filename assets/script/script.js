@@ -7,7 +7,7 @@ $(document).ready(function () {
             {
               // opacity: "0",
               right: `${getRandomArbitrary(35, 53)}%`,
-              top: `${getRandomArbitrary(4, 26)}%`,
+              top: `${getRandomArbitrary(4, 21)}%`,
             },
             0,
             "linear"
@@ -17,8 +17,8 @@ $(document).ready(function () {
           $(this).animate(
             {
               // opacity: "0",
-              right: `${getRandomArbitrary(28, 57)}%`,
-              top: `${getRandomArbitrary(46, 56)}%`,
+              right: `${getRandomArbitrary(28, 42)}%`,
+              top: `${getRandomArbitrary(46, 49)}%`,
             },
             0,
             "linear"
