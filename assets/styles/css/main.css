@@ -1007,7 +1007,7 @@ a {
     height: 158px;
   }
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 860px) and (prefers-color-scheme: dark) {
   .header {
     border-radius: 0%;
     background: linear-gradient(180deg, #ffb341 -41.15%, #fdc643 16.04%, #fbd745 67.51%), #fbd745 !important;
