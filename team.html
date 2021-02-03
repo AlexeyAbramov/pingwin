@@ -10,12 +10,29 @@
         .header {
             height: 79px;
             border-radius: 0%;
-            background: none!important;
-            background-color: #fbd745!important;
+            background: none !important;
+            background-color: #fbd745 !important;
+            overflow: visible;
+            position: relative;
+        }
+
+        .header__top {
+            position: static;
         }
 
         .header__bottom {
             display: none;
+        }
+
+        .header::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 487px;
+            height: 492px;
+            top: 211px;
+            left: -85px;
+            background: url('./assets/images/team/abstract2.png') no-repeat center center;
         }
     </style>
 </head>
@@ -105,7 +122,269 @@
                 </div>
             </div>
         </header>
+        <main class="main">
+            <!--TEAM-->
+            <section class="team">
+                <div class="team__inner _container">
+                    <div class="team__heading">
+                        <h2 class="team__title">Команда</h2>
+                    </div>
+                    <div class="team__body">
+                        <ul class="team__list">
+                            <li class="team__item">
+                                <div class="team__left">
+                                    <img class="team__photo" src="./assets/images/team/3_desktop.png" alt="team__photo">
+                                    <div class="team__status">
+                                        <span class="team__fio">Марк Слободян</span>
+                                        <span class="team__position">Менеджер среднего звена</span>
+                                    </div>
+                                </div>
+                                <div class="team__right">
+                                    <div class="team__about">
+                                        <p class="team__text">
+                                            В России я подрабатывал ремонтом техники. Посетив бизнес-тренинг в 2015, я
+                                            начал
+                                            вынашивать идею проекта: мне надоела необходимость фрилансеров бороться за
+                                            клиентов с крупным бизнесом. Переехав в Китай в 2016, я познакомился со
+                                            множеством удивительных решений на рынке онлайн-коммерции и взялся за
+                                            проект.
+                                        </p>
+                                        <p class="team__text">
+                                            Впустую потратив деньги, обратившись к недальновидным дизайнерам, я вдобавок
+                                            столкнулся с недобросовестными программистами, пропавшими без вести после
+                                            получения оплаты. Третьим фиаско было решение примкнуть к другой команде,
+                                            после
+                                            распада которой у меня прибавилось как опыта, так и долгов.
+                                        </p>
+                                        <p class="team__text">
+                                            Сегодня я с гордостью представляю вам свою команду и наш проект Pingwin.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__left">
+                                    <img class="team__photo" src="./assets/images/team/3_desktop.png" alt="team__photo">
+                                    <div class="team__status">
+                                        <span class="team__fio">Марк Слободян</span>
+                                        <span class="team__position">Менеджер среднего звена</span>
+                                    </div>
+                                </div>
+                                <div class="team__right">
+                                    <div class="team__about">
+                                        <p class="team__text">
+                                            Графический дизайнер. Вместе с Артемом Зайцевым основал веб-студию Gridpix.
+                                            Был арт-директором интернет-газеты Нефть до ее перезапуска. Шесть лет был
+                                            профессором кафедры мультимедийных технологий в Тюменском Государственном
+                                            Институте Культуры. В 2016 году основал студию графического дизайна
+                                            Semantika.
+                                        </p>
+                                        <p class="team__text">
+                                            В Pingwin нравится решать сложные задачи в области графических интерфейсов -
+                                            делать не только функционально, но и эстетично.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__left">
+                                    <img class="team__photo" src="./assets/images/team/3_desktop.png" alt="team__photo">
+                                    <div class="team__status">
+                                        <span class="team__fio">Марк Слободян</span>
+                                        <span class="team__position">Менеджер среднего звена</span>
+                                    </div>
+                                </div>
+                                <div class="team__right">
+                                    <div class="team__about">
+                                        <p class="team__text">
+                                            Начав карьеру IT-специалиста во времена Windows 2000, сделав свой первый
+                                            web-сайт, прошёл путь от техника-монтажника, не знающего куда подключить
+                                            LAN-кабель, до ведущего программиста, а в 2013 стал руководителем
+                                            собственной команды разработки.
+                                        </p>
+                                        <p class="team__text">
+                                            Со временем проекты усложнились от обычных веб-сайтов до уникального ПО для
+                                            серверов и рабочих станций, а заказы стали поступать от крупных фирм из
+                                            стран СНГ, Европы и Азии.
+                                        </p>
+                                        <p class="team__text">
+                                            Pingwin для нас - не просто очередной проект. Нам перспективы и преимущество
+                                            над другими проектами видны уже сейчас, причём не только в функциональной
+                                            части. В Pingwin огромный потенциал к развитию заложен на идейном уровне!
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__left">
+                                    <img class="team__photo" src="./assets/images/team/3_desktop.png" alt="team__photo">
+                                    <div class="team__status">
+                                        <span class="team__fio">Марк Слободян</span>
+                                        <span class="team__position">Менеджер среднего звена</span>
+                                    </div>
+                                </div>
+                                <div class="team__right">
+                                    <div class="team__about">
+                                        <p class="team__text">
+                                            Живя в РФ, думал стать химиком, но уехал учиться в SCUT и, защитив
+                                            диссертацию по соцсетям и онлайн-коммерции, стал магистром
+                                            бренд-менеджмента. Занявшись продвижением мероприятий в стриминговых
+                                            трансляциях, добивался вторых и третьих мест в рейтинге по всему Китаю,
+                                            параллельно изучая причины успешности китайских маркетплейсов.
+                                        </p>
+                                        <p class="team__text">
+                                            Познакомившись с Марком, решил принять участие в проекте Pingwin. Мы
+                                            амбициозны и сумасшедши, у нас креативнейшая команда, и мы хотим войти в
+                                            историю, предоставив пользователям самый уникальный опыт онлайн-коммерции!
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__left">
+                                    <img class="team__photo" src="./assets/images/team/3_desktop.png" alt="team__photo">
+                                    <div class="team__status">
+                                        <span class="team__fio">Марк Слободян</span>
+                                        <span class="team__position">Менеджер среднего звена</span>
+                                    </div>
+                                </div>
+                                <div class="team__right">
+                                    <div class="team__about">
+                                        <p class="team__text">
+                                            С 2011 года занимаюсь монтажом видео и развитием нескольких YouTube каналов.
+                                            На моём счету – сотни часов смонтированных роликов на разную тематику.
+                                        </p>
+                                        <p class="team__text">
+                                            Начал путь копирайтера в 2018 году, совершенствуя умение чётко и
+                                            последовательно оформлять идеи. В 2019 году на агрегаторе новостных статей
+                                            "Яндекс.Дзен" запустил канал "Мобилкин" с новостями о мобильной технике и
+                                            продвигающими статьями, аудитория которой временами достигает 75 тысяч
+                                            человек.
+                                        </p>
+                                        <p class="team__text">
+                                            Мне в проекте Pingwin нравится то, что он нацелен на поддержку частных
+                                            предпринимателей - эти люди нуждаются в качественном инструменте сейчас, как
+                                            никогда, особенно в России.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__left">
+                                    <img class="team__photo" src="./assets/images/team/3_desktop.png" alt="team__photo">
+                                    <div class="team__status">
+                                        <span class="team__fio">Марк Слободян</span>
+                                        <span class="team__position">Менеджер среднего звена</span>
+                                    </div>
+                                </div>
+                                <div class="team__right">
+                                    <div class="team__about">
+                                        <p class="team__text">
+                                            Работал в сфере финансов с 2003 года, набираясь опыта коммуникации с малым и
+                                            средним бизнесом. В 2014 году открыл логистическую компанию, но потом
+                                            перепрофилировались под обслуживание медицинской техники. Компания быстро
+                                            развивалась. На пике я продал свою долю партнеру и начал бизнес с Китаем.
+                                            Запустил три успешных онлайн-проекта, показывающих стабильный рост.
+                                        </p>
+                                        <p class="team__text">
+                                            На мой взгляд, Pingwin имеет потенциал пустить малый бизнес и самозанятых в
+                                            новое русло - в сфере услуг сейчас хаос, и проект может привнести порядок.
+                                            Малый бизнес недооценен!
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__left">
+                                    <img class="team__photo" src="./assets/images/team/3_desktop.png" alt="team__photo">
+                                    <div class="team__status">
+                                        <span class="team__fio">Марк Слободян</span>
+                                        <span class="team__position">Менеджер среднего звена</span>
+                                    </div>
+                                </div>
+                                <div class="team__right">
+                                    <div class="team__about">
+                                        <p class="team__text">
+                                            Организация мероприятий, встреч и презентаций - одна из моих сильных сторон.
+                                            В настоящее время занимаюсь анализом современных технологий, ПО и рынков
+                                            стартапов в одной из крупных российских госкорпораций, параллельно
+                                            заканчивая магистратуру по международному научно-техническому и
+                                            промышленному сотрудничеству. В 2020 я познакомился с командой Pingwin. У
+                                            проекта здоровые амбиции - продукт международный. Я уверен, Pingwin - это
+                                            именно то, чего действительно не хватало огромному количеству фрилансеров и
+                                            людей, потребляющих их услуги.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!--/TEAM-->
+        </main>
+        <!--FOOTER-->
+        <footer class="footer">
+            <div class="footer__inner _container">
+                <div class="footer__body">
+                    <div class="footer__left">
+                        <div class="footer-logo">
+                            <a class="footer-logo__link" href="/"><img class="footer-logo__img"
+                                    src="./assets/images/logo.png" alt="footer__logo"></a>
+                        </div>
+                        <div class="footer__wrapper">
+                            <a href="/" class="footer__policy">Политика конфиденциальности</a>
+                            <a href="/" class="footer__rules">Условия сервиса</a>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__socials">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="/" class="footer__link"><img src="./assets/images/footer/insta.png"
+                                            alt="insta"></a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="/" class="footer__link"><img src="./assets/images/footer/vk.png"
+                                            alt="vk"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-language">
+                            <div class="footer-language__popup">
+                                <span class="footer-language__text">РУ</span>
+                                <div class="footer-language__arrow"></div>
+                            </div>
+                            <div class="footer-language__menu footer-language" id="footer-menu">
+                                <ul class="footer-language__list">
+                                    <li class="footer-language__item">
+                                        <a href="/" class="footer-language__link">
+                                            Русский
+                                        </a>
+                                    </li>
+                                    <li class="footer-language__item">
+                                        <a href="/" class="footer-language__link">
+                                            Английский
+                                        </a>
+                                    </li>
+                                    <li class="footer-language__item">
+                                        <a href="/" class="footer-language__link">
+                                            Китайский
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--/FOOTER-->
     </div>
+    <script src="./assets/script/jquery-3.5.1.min.js"></script>
+    <script src="./assets/script/slick.min.js"></script>
+    <script src="./assets/script/script.js"></script>
 </body>
 
 </html>

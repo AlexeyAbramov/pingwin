@@ -125,7 +125,7 @@
       &__img {
         margin: 0 auto;
       }
-      &__mark{
+      &__mark {
         width: 20%;
       }
     }
@@ -341,6 +341,92 @@
   .partners {
     &__item {
       max-width: calc(100% - 40px);
+    }
+  }
+}
+
+// team
+
+@media screen and (max-width: 1300px) {
+  .header {
+    &::after {
+      display: none !important;
+    }
+  }
+  .team {
+    &::before,
+    &::after {
+      display: none !important;
+    }
+  }
+}
+@media screen and (max-width: 860px) {
+  .header {
+    &__inner {
+      position: fixed;
+      width: 100%;
+      z-index: 999;
+    }
+  }
+  .team {
+    &__left {
+      flex-direction: row;
+    }
+    &__right {
+      margin-top: 14px;
+    }
+    &__item {
+      flex-direction: column;
+      &:nth-child(odd) {
+        align-items: flex-start;
+        .team {
+          &__right {
+            margin-left: 0;
+          }
+        }
+      }
+      &:nth-child(even) {
+        .team {
+          &__left {
+            order: 0;
+            margin-right: 0;
+            justify-content: flex-end;
+          }
+          &__right {
+            margin-right: 0;
+          }
+          &__photo {
+            order: 1;
+          }
+          &__status {
+            align-items: flex-end;
+            text-align: end;
+          }
+        }
+      }
+    }
+    &__status {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 15px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .team {
+    padding-top: 28px;
+    padding-bottom: 65px;
+    &__photo {
+      width: 95px;
+    }
+    &__status {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &__about {
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 }

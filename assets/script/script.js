@@ -49,7 +49,7 @@ $(document).ready(function () {
           break;
       }
     });
-  }, 3000);
+  }, 3000);      // время анимации в мс (3000)
 
   function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
