@@ -77,7 +77,8 @@
         background-color: white;
         border-radius: 24px;
         margin: 0 auto;
-        position: absolute;
+        // position: absolute;
+        position: fixed;
         top: calc(50% - 374px);
         left: calc(50% - 202px);
         padding: 18px 21px 63px 23px;
@@ -183,11 +184,6 @@
         &:hover {
           filter: drop-shadow(0px 8px 16px rgba(72, 66, 163, 0.35));
           cursor: url("../../images/cursor.png"), auto;
-        }
-      }
-      [data-popup-7] {
-        .top-how__phone-popup {
-          top: 38%;
         }
       }
       &__title {

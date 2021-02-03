@@ -500,7 +500,7 @@ a {
   background-color: white;
   border-radius: 24px;
   margin: 0 auto;
-  position: absolute;
+  position: fixed;
   top: calc(50% - 374px);
   left: calc(50% - 202px);
   padding: 18px 21px 63px 23px;
@@ -603,9 +603,6 @@ a {
 .how .body-how .bottom-how__item:hover {
   filter: drop-shadow(0px 8px 16px rgba(72, 66, 163, 0.35));
   cursor: url("../../images/cursor.png"), auto;
-}
-.how .body-how .bottom-how [data-popup-7] .top-how__phone-popup {
-  top: 38%;
 }
 .how .body-how .bottom-how__title {
   color: #fff;
@@ -1011,6 +1008,7 @@ a {
   .header {
     border-radius: 0%;
     background: linear-gradient(180deg, #ffb341 -41.15%, #fdc643 16.04%, #fbd745 67.51%), #fbd745 !important;
+    height: 750px;
   }
   .header__inner {
     padding: 0;
@@ -1105,6 +1103,7 @@ a {
   }
   .header .phone-header .phone__wrapper::after {
     height: 100%;
+    background: linear-gradient(0deg, #ffb341 -10.87%, rgba(254, 218, 70, 0) 51.88%);
   }
   .header .appstore__image {
     background: url("../../images/header/appstore-mobile.png") no-repeat center center/cover;
@@ -1147,7 +1146,7 @@ a {
     display: none;
   }
   .how__inner {
-    padding: 37px 0 95px 0;
+    padding: 37px 0 40px 0;
   }
   .how__title {
     font-size: 24px;
@@ -1158,6 +1157,7 @@ a {
   }
   .how .registration-how {
     background-position-y: 2%;
+    margin-top: 25px;
   }
   .how .body-how .top-how {
     flex-direction: column;
@@ -1174,22 +1174,11 @@ a {
     width: 230px;
     height: auto;
     padding: 11.4px 14.3px 10px 14.3px;
+    top: calc(50% - 211px);
     left: calc(50% - 115px);
   }
   .how .body-how .top-how__phone-popup .phone-popup__image {
     margin-top: 11px;
-  }
-  .how .body-how .top-how [data-popup-3] .top-how__phone-popup {
-    top: 42%;
-  }
-  .how .body-how .top-how [data-popup-4] .top-how__phone-popup {
-    top: 52%;
-  }
-  .how .body-how .top-how [data-popup-5] .top-how__phone-popup {
-    top: 59%;
-  }
-  .how .body-how .top-how [data-popup-6] .top-how__phone-popup {
-    top: 66%;
   }
   .how .body-how .top-how .phone__title {
     margin-top: 6px;
@@ -1205,9 +1194,6 @@ a {
   }
   .how .body-how .bottom-how {
     margin-top: 25px;
-  }
-  .how .body-how .bottom-how [data-popup-7] .top-how__phone-popup {
-    top: 76%;
   }
 
   .subscribe {

@@ -90,8 +90,8 @@ $(document).ready(function () {
             $(this).animate(
               {
                 // opacity: "0",
-                right: `${getRandomArbitrary(35, 71)}%`,
-                top: `${getRandomArbitrary(5, 25)}%`,
+                right: `${getRandomArbitrary(37, 74)}%`,
+                top: `${getRandomArbitrary(11, 40)}%`,
               },
               0,
               "linear"
@@ -104,8 +104,8 @@ $(document).ready(function () {
             $(this).animate(
               {
                 // opacity: "0",
-                right: `${getRandomArbitrary(33, 60)}%`,
-                top: `${getRandomArbitrary(20, 34)}%`,
+                right: `${getRandomArbitrary(35, 60)}%`,
+                top: `${getRandomArbitrary(30, 60)}%`,
               },
               0,
               "linear"
@@ -116,7 +116,7 @@ $(document).ready(function () {
               {
                 // opacity: "0",
                 right: `${getRandomArbitrary(1, 35)}%`,
-                top: `${getRandomArbitrary(6, 25)}%`,
+                top: `${getRandomArbitrary(6, 42)}%`,
               },
               0,
               "linear"
@@ -127,7 +127,7 @@ $(document).ready(function () {
               {
                 // opacity: "0",
                 right: `${getRandomArbitrary(5, 32)}%`,
-                top: `${getRandomArbitrary(20, 34)}%`,
+                top: `${getRandomArbitrary(20, 52)}%`,
               },
               0,
               "linear"
