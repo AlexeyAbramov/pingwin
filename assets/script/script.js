@@ -105,7 +105,7 @@ $(document).ready(function () {
               {
                 // opacity: "0",
                 right: `${getRandomArbitrary(35, 60)}%`,
-                top: `${getRandomArbitrary(30, 60)}%`,
+                top: `${getRandomArbitrary(30, 50)}%`,
               },
               0,
               "linear"
@@ -127,7 +127,7 @@ $(document).ready(function () {
               {
                 // opacity: "0",
                 right: `${getRandomArbitrary(5, 32)}%`,
-                top: `${getRandomArbitrary(20, 52)}%`,
+                top: `${getRandomArbitrary(20, 40)}%`,
               },
               0,
               "linear"

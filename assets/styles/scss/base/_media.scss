@@ -367,6 +367,9 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .header {
+    height: 700px;
+  }
   .partners {
     &__item {
       max-width: 100%;
