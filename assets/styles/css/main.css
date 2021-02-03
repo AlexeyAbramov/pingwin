@@ -1398,6 +1398,229 @@ a {
     line-height: 20px;
   }
 }
+@media (prefers-color-scheme: dark) {
+  .how {
+    background: url("../../images/how/pattern.png") no-repeat center center/cover;
+    position: relative;
+  }
+  .how__inner {
+    padding: 60px 0 100px 0;
+  }
+  .how__heading {
+    text-align: center;
+  }
+  .how__title {
+    color: #fff;
+  }
+  .how .registration-how {
+    margin-top: 70px;
+    background: url("../../images/how/bg.png") no-repeat 50% 7%;
+  }
+  .how .registration-how__heading {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .how .registration-how__title {
+    color: #fff;
+  }
+  .how .body-how {
+    display: flex;
+    flex-direction: column;
+    max-width: 964px;
+    margin: 0 auto;
+  }
+  .how .body-how .top-how {
+    display: flex;
+    justify-content: space-between;
+  }
+  .how .body-how .top-how__buy, .how .body-how .top-how__sell {
+    width: 296px;
+    min-height: 628px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .how .body-how .top-how__phone {
+    margin-top: 40px;
+  }
+  .how .body-how .top-how__list {
+    margin-top: 20px;
+  }
+  .how .body-how .top-how__item {
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0px 12px 24px rgba(96, 90, 196, 0.15);
+    border-radius: 12px;
+    transition: 0.3s padding 0s;
+    margin-top: 18px;
+  }
+  .how .body-how .top-how__item:hover {
+    filter: drop-shadow(0px 8px 16px rgba(72, 66, 163, 0.35));
+    cursor: url("../../images/cursor.png"), auto;
+  }
+  .how .body-how .top-how__popup {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 99999999999;
+  }
+  .how .body-how .top-how__popup.active {
+    display: block;
+  }
+  .how .body-how .top-how__phone-popup {
+    width: 404px;
+    height: 749px;
+    background-color: white;
+    border-radius: 24px;
+    margin: 0 auto;
+    position: fixed;
+    top: calc(50% - 374px);
+    left: calc(50% - 202px);
+    padding: 18px 21px 63px 23px;
+  }
+  .how .body-how .top-how__phone-popup .phone {
+    position: relative;
+  }
+  .how .body-how .top-how__phone-popup .phone-close {
+    position: absolute;
+    cursor: pointer;
+    content: "";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+    height: 18px;
+    top: -40px;
+    right: 0;
+  }
+  .how .body-how .top-how__phone-popup .phone-close__text {
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+  }
+  .how .body-how .top-how__phone-popup .phone-close__button {
+    width: 15px;
+    height: 15px;
+    position: relative;
+  }
+  .how .body-how .top-how__phone-popup .phone-close__line {
+    width: 21.14px;
+    height: 1.5px;
+    position: absolute;
+    background-color: #fff;
+    top: calc(50% - .7px);
+  }
+  .how .body-how .top-how__phone-popup .phone-close__line:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .how .body-how .top-how__phone-popup .phone-close__line:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+  .how .body-how .top-how__phone-popup .phone-lines {
+    width: 68px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .how .body-how .top-how__phone-popup .phone-lines__circle {
+    width: 9px;
+  }
+  .how .body-how .top-how__phone-popup .phone-lines__line {
+    width: 51px;
+  }
+  .how .body-how .top-how__phone-popup .phone-lines__circle, .how .body-how .top-how__phone-popup .phone-lines__line {
+    height: 9px;
+    border-radius: 12px;
+    background: rgba(126, 119, 241, 0.5);
+  }
+  .how .body-how .top-how__phone-popup .phone-popup__image {
+    margin: 17px auto 0 auto;
+  }
+  .how .body-how .top-how__phone-popup .phone__title {
+    display: block;
+    text-align: center;
+    margin-top: 19px;
+  }
+  .how .body-how .top-how__title {
+    color: #fff;
+    text-align: center;
+  }
+  .how .body-how .top-how__text {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .how .body-how .top-how__image {
+    margin: 0 auto;
+  }
+  .how .body-how .bottom-how {
+    max-width: 296px;
+    margin: 0 auto;
+  }
+  .how .body-how .bottom-how__wrapper {
+    text-align: center;
+  }
+  .how .body-how .bottom-how__item {
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0px 12px 24px rgba(96, 90, 196, 0.15);
+    border-radius: 12px;
+    transition: 0.3s padding 0s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .how .body-how .bottom-how__item:last-child {
+    margin-top: 30px;
+  }
+  .how .body-how .bottom-how__item:hover {
+    filter: drop-shadow(0px 8px 16px rgba(72, 66, 163, 0.35));
+    cursor: url("../../images/cursor.png"), auto;
+  }
+  .how .body-how .bottom-how__title {
+    color: #fff;
+    text-align: center;
+  }
+  .how .body-how .bottom-how__text {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .how .body-how .bottom-how__image {
+    margin: 0 auto;
+  }
+  .how .body-how .bottom-how .social-how {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: rgba(55, 71, 79, 0.1);
+    border-radius: 9px;
+    padding: 16px;
+  }
+  .how .body-how__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .how .body-how__title {
+    color: #fff;
+  }
+  .how::after {
+    position: absolute;
+    display: block;
+    content: "";
+    left: -18px;
+    bottom: -372px;
+    width: 487px;
+    height: 492px;
+    background: url("../../images/how/dots.png");
+  }
+}
 @media screen and (max-width: 1650px) and (prefers-color-scheme: dark) {
   .features::after {
     display: none;
