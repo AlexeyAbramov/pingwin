@@ -185,6 +185,11 @@
           cursor: url("../../images/cursor.png"), auto;
         }
       }
+      [data-popup-7] {
+        .top-how__phone-popup {
+          top: 38%;
+        }
+      }
       &__title {
         color: $white;
         text-align: center;

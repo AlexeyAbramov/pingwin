@@ -604,6 +604,9 @@ a {
   filter: drop-shadow(0px 8px 16px rgba(72, 66, 163, 0.35));
   cursor: url("../../images/cursor.png"), auto;
 }
+.how .body-how .bottom-how [data-popup-7] .top-how__phone-popup {
+  top: 38%;
+}
 .how .body-how .bottom-how__title {
   color: #fff;
   text-align: center;
