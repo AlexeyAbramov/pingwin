@@ -90,6 +90,10 @@ body {
   font-size: 18px;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -471,13 +475,98 @@ a {
   box-shadow: 0px 12px 24px rgba(96, 90, 196, 0.15);
   border-radius: 12px;
   transition: 0.3s padding 0s;
-}
-.how .body-how .top-how__item + .top-how__item {
   margin-top: 18px;
 }
 .how .body-how .top-how__item:hover {
   filter: drop-shadow(0px 8px 16px rgba(72, 66, 163, 0.35));
   cursor: url("../../images/cursor.png"), auto;
+}
+.how .body-how .top-how__popup {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 99999999999;
+}
+.how .body-how .top-how__popup.active {
+  display: block;
+}
+.how .body-how .top-how__phone-popup {
+  width: 404px;
+  height: 749px;
+  background-color: white;
+  border-radius: 24px;
+  margin: 0 auto;
+  position: absolute;
+  top: calc(50% - 374px);
+  left: calc(50% - 202px);
+  padding: 18px 21px 63px 23px;
+}
+.how .body-how .top-how__phone-popup .phone {
+  position: relative;
+}
+.how .body-how .top-how__phone-popup .phone-close {
+  position: absolute;
+  cursor: pointer;
+  content: "";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+  height: 18px;
+  top: -40px;
+  right: 0;
+}
+.how .body-how .top-how__phone-popup .phone-close__text {
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+}
+.how .body-how .top-how__phone-popup .phone-close__button {
+  width: 15px;
+  height: 15px;
+  position: relative;
+}
+.how .body-how .top-how__phone-popup .phone-close__line {
+  width: 21.14px;
+  height: 1.5px;
+  position: absolute;
+  background-color: #fff;
+  top: calc(50% - .7px);
+}
+.how .body-how .top-how__phone-popup .phone-close__line:nth-child(1) {
+  transform: rotate(45deg);
+}
+.how .body-how .top-how__phone-popup .phone-close__line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+.how .body-how .top-how__phone-popup .phone-lines {
+  width: 68px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.how .body-how .top-how__phone-popup .phone-lines__circle {
+  width: 9px;
+}
+.how .body-how .top-how__phone-popup .phone-lines__line {
+  width: 51px;
+}
+.how .body-how .top-how__phone-popup .phone-lines__circle, .how .body-how .top-how__phone-popup .phone-lines__line {
+  height: 9px;
+  border-radius: 12px;
+  background: rgba(126, 119, 241, 0.5);
+}
+.how .body-how .top-how__phone-popup .phone-popup__image {
+  margin: 17px auto 0 auto;
+}
+.how .body-how .top-how__phone-popup .phone__title {
+  display: block;
+  text-align: center;
+  margin-top: 19px;
 }
 .how .body-how .top-how__title {
   color: #fff;
@@ -510,9 +599,6 @@ a {
 }
 .how .body-how .bottom-how__item:last-child {
   margin-top: 30px;
-}
-.how .body-how .bottom-how__item + .top-how__item {
-  margin-top: 18px;
 }
 .how .body-how .bottom-how__item:hover {
   filter: drop-shadow(0px 8px 16px rgba(72, 66, 163, 0.35));
@@ -1081,12 +1167,35 @@ a {
     order: 1;
     margin-top: 20px;
   }
+  .how .body-how .top-how__phone-popup {
+    width: 230px;
+    height: auto;
+    padding: 11.4px 14.3px 10px 14.3px;
+    left: calc(50% - 115px);
+  }
+  .how .body-how .top-how__phone-popup .phone-popup__image {
+    margin-top: 11px;
+  }
+  .how .body-how .top-how [data-popup-3] .top-how__phone-popup {
+    top: 42%;
+  }
+  .how .body-how .top-how [data-popup-6] .top-how__phone-popup {
+    top: 66%;
+  }
+  .how .body-how .top-how .phone__title {
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 18px;
+  }
   .how .body-how .top-how__sell {
     order: 3;
   }
   .how .body-how .top-how__buy, .how .body-how .top-how__sell {
     min-height: auto;
     margin-top: 25px;
+  }
+  .how .body-how [data-popup-7] .top-how__phone-popup {
+    top: 76%;
   }
   .how .body-how .bottom-how {
     margin-top: 25px;
@@ -1202,6 +1311,14 @@ a {
   .footer-language__popup {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .partners__item {
+    max-width: 100%;
+  }
+  .partners__logo {
+    width: 100%;
   }
 }
 @media screen and (max-width: 320px) {

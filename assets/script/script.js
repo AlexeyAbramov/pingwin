@@ -6,6 +6,7 @@ $(document).ready(function () {
     return Math.random() * (max - min) + min;
   }
   if ($(window).width() > 860) {
+    // анимация для десктопа с разрешением > 860px
     setInterval(() => {
       $icons.each(function (index) {
         // возвращаем новую ссылку иконки
@@ -71,6 +72,7 @@ $(document).ready(function () {
       });
     }, 3000); // время анимации в мс (3000)
   } else {
+    // анимация для мобилок с разрешением < 860px
     setInterval(() => {
       $icons.each(function (index) {
         // возвращаем новую ссылку иконки
@@ -82,7 +84,7 @@ $(document).ready(function () {
         };
 
         $(this).attr("src", randomSrc($icons__quantity));
-        
+
         switch (index) {
           case 0:
             $(this).animate(
@@ -137,76 +139,8 @@ $(document).ready(function () {
     }, 3000); // время анимации в мс (3000)
   }
 
-  // setInterval(() => {
-  //   $icons.each(function (index) {
-  //     let randomSrc = (quantity) => {
-  //       let num = Math.floor(getRandomArbitrary(1, quantity));
-  //       return $(this)
-  //         .attr("src")
-  //         .replace(/([0-9]).png/, `${num}.png`);
-  //     };
-
-  //     $(this).attr("src", randomSrc($icons__quantity));
-  //     switch (index) {
-  //       case 0:
-  //         $(this).animate(
-  //           {
-  //             // opacity: "0",
-  //             right: `${getRandomArbitrary(35, 53)}%`,
-  //             top: `${getRandomArbitrary(4, 21)}%`,
-  //           },
-  //           0,
-  //           "linear"
-  //         );
-  //         lel = () => {
-  //           console.log("hi");
-  //         };
-  //         break;
-  //       case 1:
-  //         $(this).animate(
-  //           {
-  //             // opacity: "0",
-  //             right: `${getRandomArbitrary(28, 42)}%`,
-  //             top: `${getRandomArbitrary(46, 49)}%`,
-  //           },
-  //           0,
-  //           "linear"
-  //         );
-  //         break;
-  //       case 2:
-  //         $(this).animate(
-  //           {
-  //             // opacity: "0",
-  //             right: `${getRandomArbitrary(1, 26)}%`,
-  //             top: `${getRandomArbitrary(33, 56)}%`,
-  //           },
-  //           0,
-  //           "linear"
-  //         );
-  //         break;
-  //       case 3:
-  //         $(this).animate(
-  //           {
-  //             // opacity: "0",
-  //             right: `${getRandomArbitrary(1, 36)}%`,
-  //             top: `${getRandomArbitrary(1, 34)}%`,
-  //           },
-  //           0,
-  //           "linear"
-  //         );
-  //       default:
-  //         break;
-  //     }
-  //   });
-  // }, 3000); // время анимации в мс (3000)
-
-  function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
-  }
-
-  //scroll
+  // header-visibility
   $header__top = $(".header__top");
-
   $(window).scroll(function () {
     window.pageYOffset === 0
       ? $header__top.removeClass("sticky")
@@ -288,5 +222,27 @@ $(document).ready(function () {
         settings: "unslick",
       },
     ],
+  });
+
+  // popup
+  $how__item = $(".how__item");
+  $phone_close = $(".phone-close");
+  $body = $("body");
+  $how__item.click(function () {
+    $(this).next().addClass("active");
+  });
+  $phone_close.click(function () {
+    $(this).parent().parent().removeClass("active");
+  });
+  $(document).mouseup(function (e) {
+    // событие клика по веб-документу
+    let div = $(".top-how__phone-popup"); // тут указываем ID элемента
+    if (
+      !div.is(e.target) && // если клик был не по нашему блоку
+      div.has(e.target).length === 0
+    ) {
+      // и не по его дочерним элементам
+      $(".top-how__popup").removeClass("active");
+    }
   });
 });

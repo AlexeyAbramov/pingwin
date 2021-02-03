@@ -52,12 +52,100 @@
         box-shadow: 0px 12px 24px rgba(96, 90, 196, 0.15);
         border-radius: 12px;
         transition: 0.3s padding 0s;
-        & + .top-how__item {
-          margin-top: 18px;
-        }
+        margin-top: 18px;
         &:hover {
           filter: drop-shadow(0px 8px 16px rgba(72, 66, 163, 0.35));
           cursor: url("../../images/cursor.png"), auto;
+        }
+      }
+      &__popup {
+        &.active{
+          display: block;
+        }
+        display: none;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.7);
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        z-index: 99999999999;
+      }
+      &__phone-popup {
+        width: 404px;
+        height: 749px;
+        background-color: white;
+        border-radius: 24px;
+        margin: 0 auto;
+        position: absolute;
+        top: calc(50% - 374px);
+        left: calc(50% - 202px);
+        padding: 18px 21px 63px 23px;
+        .phone {
+          position: relative;
+          &-close {
+            position: absolute;
+            cursor: pointer;
+            content: "";
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90px;
+            height: 18px;
+            top: -40px;
+            right: 0;
+            &__text {
+              font-size: 16px;
+              line-height: 18px;
+              color: $white;
+            }
+            &__button {
+              width: 15px;
+              height: 15px;
+              position: relative;
+            }
+            &__line {
+              width: 21.14px;
+              height: 1.5px;
+              position: absolute;
+              background-color: $white;
+              top: calc(50% - .7px);
+              &:nth-child(1){
+                transform: rotate(45deg);
+              }
+              &:nth-child(2){
+                transform: rotate(-45deg);
+              }
+            }
+          }
+          &-lines {
+            width: 68px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            &__circle {
+              width: 9px;
+            }
+            &__line {
+              width: 51px;
+            }
+            &__circle,
+            &__line {
+              height: 9px;
+              border-radius: 12px;
+              background: rgba(126, 119, 241, 0.5);
+            }
+          }
+          &-popup {
+            &__image {
+              margin: 17px auto 0 auto;
+            }
+          }
+          &__title{
+            display: block;
+            text-align: center;
+            margin-top: 19px;
+          }
         }
       }
       &__title {
@@ -76,7 +164,7 @@
     .bottom-how {
       max-width: 296px;
       margin: 0 auto;
-      &__wrapper{
+      &__wrapper {
         text-align: center;
       }
       &__item {
@@ -89,11 +177,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        &:last-child{
+        &:last-child {
           margin-top: 30px;
-        }
-        & + .top-how__item {
-          margin-top: 18px;
         }
         &:hover {
           filter: drop-shadow(0px 8px 16px rgba(72, 66, 163, 0.35));

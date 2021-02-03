@@ -135,8 +135,8 @@
       &__mark {
         width: 20%;
       }
-      .phone__wrapper{
-        &::after{
+      .phone__wrapper {
+        &::after {
           height: 100%;
         }
       }
@@ -208,6 +208,30 @@
         &__phone {
           order: 1;
           margin-top: 20px;
+          &-popup {
+            width: 230px;
+            height: auto;
+            padding: 11.4px 14.3px 10px 14.3px;
+            left: calc(50% - 115px);
+            .phone-popup__image {
+              margin-top: 11px;
+            }
+          }
+        }
+        [data-popup-3] {
+          .top-how__phone-popup {
+            top: 42%;
+          }
+        }
+        [data-popup-6] {
+          .top-how__phone-popup {
+            top: 66%;
+          }
+        }
+        .phone__title {
+          margin-top: 6px;
+          font-size: 12px;
+          line-height: 18px;
         }
         &__sell {
           order: 3;
@@ -216,6 +240,11 @@
         &__sell {
           min-height: auto;
           margin-top: 25px;
+        }
+      }
+      [data-popup-7] {
+        .top-how__phone-popup {
+          top: 76%;
         }
       }
       .bottom-how {
@@ -340,6 +369,16 @@
         font-size: 16px;
         line-height: 24px;
       }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .partners {
+    &__item {
+      max-width: 100%;
+    }
+    &__logo{
+      width: 100%;
     }
   }
 }
