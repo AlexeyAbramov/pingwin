@@ -10,7 +10,7 @@
     }
   }
 }
-@media screen and (min-width: 861px) and (max-width: 960px) and (prefers-color-scheme: dark) {
+@media screen and (min-width: 861px) and (prefers-color-scheme: dark) and (max-width: 960px) {
   .header {
     &__phone {
       margin-top: 10%;
@@ -43,6 +43,7 @@
         #fbd745 67.51%
       ),
       #fbd745 !important;
+    height: 750px;
     &__inner {
       padding: 0;
     }
@@ -138,6 +139,11 @@
       .phone__wrapper {
         &::after {
           height: 100%;
+          background: linear-gradient(
+            0deg,
+            #ffb341 -10.87%,
+            rgba(254, 218, 70, 0) 51.88%
+          );
         }
       }
     }
@@ -186,7 +192,7 @@
       display: none;
     }
     &__inner {
-      padding: 37px 0 95px 0;
+      padding: 37px 0 40px 0;
     }
     &__title {
       font-size: 24px;
@@ -197,6 +203,7 @@
     }
     .registration-how {
       background-position-y: 2%;
+      margin-top: 25px;
     }
     .body-how {
       .top-how {
@@ -212,30 +219,11 @@
             width: 230px;
             height: auto;
             padding: 11.4px 14.3px 10px 14.3px;
+            top: calc(50% - 211px);
             left: calc(50% - 115px);
             .phone-popup__image {
               margin-top: 11px;
             }
-          }
-        }
-        [data-popup-3] {
-          .top-how__phone-popup {
-            top: 42%;
-          }
-        }
-        [data-popup-4] {
-          .top-how__phone-popup {
-            top: 52%;
-          }
-        }
-        [data-popup-5] {
-          .top-how__phone-popup {
-            top: 59%;
-          }
-        }
-        [data-popup-6] {
-          .top-how__phone-popup {
-            top: 66%;
           }
         }
         .phone__title {
@@ -252,11 +240,7 @@
           margin-top: 25px;
         }
       }
-      [data-popup-7] {
-        .top-how__phone-popup {
-          top: 76%;
-        }
-      }
+
       .bottom-how {
         margin-top: 25px;
       }
@@ -383,6 +367,9 @@
   }
 }
 @media screen and (max-width: 500px) and (prefers-color-scheme: dark) {
+  .header {
+    height: 700px;
+  }
   .partners {
     &__item {
       max-width: 100%;
@@ -392,7 +379,7 @@
     }
   }
 }
-@media screen and (max-width: 320px) and (prefers-color-scheme: dark) {
+@media screen and (max-width: 375px) and (prefers-color-scheme: dark) {
   .header {
     .phone-header {
       padding: 0 15px;
