@@ -1203,11 +1203,11 @@ a {
     min-height: auto;
     margin-top: 25px;
   }
-  .how .body-how [data-popup-7] .top-how__phone-popup {
-    top: 76%;
-  }
   .how .body-how .bottom-how {
     margin-top: 25px;
+  }
+  .how .body-how .bottom-how [data-popup-7] .top-how__phone-popup {
+    top: 76%;
   }
 
   .subscribe {
